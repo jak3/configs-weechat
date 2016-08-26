@@ -1,0 +1,8 @@
+elems:
+
+  - src:  'weechat/(.+)'
+    dst:  '~/.weechat/<1>'
+    only:
+      features: ['weechat']
+
+# vim: set filetype=eruby.yaml :

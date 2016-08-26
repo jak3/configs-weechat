@@ -1,0 +1,84 @@
+################################################################################
+#                                                                              #
+# File informations:                                                           #
+# - Name:    weechat/xfer.conf.tt                                              #
+# - Summary: Configuration for the Xfer plugin of weechat.                     #
+# - Authors:                                                                   #
+#   - Alessandro Molari <molari.alessandro@gmail.com> (alem0lars)              #
+#                                                                              #
+# Project informations:                                                        #
+# - Homepage:        https://github.com/alem0lars/configs-weechat              #
+# - Getting started: see README.md in the project root folder                  #
+#                                                                              #
+# License: Apache v2.0 (see below)                                             #
+#                                                                              #
+################################################################################
+#                                                                              #
+# Licensed to the Apache Software Foundation (ASF) under one more contributor  #
+# license agreements.  See the NOTICE file distributed with this work for      #
+# additional information regarding copyright ownership. The ASF licenses this  #
+# file to you under the Apache License, Version 2.0 (the "License"); you may   #
+# not use this file except in compliance with the License.                     #
+# You may obtain a copy of the License at                                      #
+#                                                                              #
+#   http://www.apache.org/licenses/LICENSE-2.0                                 #
+#                                                                              #
+# Unless required by applicable law or agreed to in writing, software          #
+# distributed under the License is distributed on an "AS IS" BASIS, WITHOUT    #
+# WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.             #
+# See the License for the specific language governing permissions and          #
+# limitations under the License.                                               #
+#                                                                              #
+################################################################################
+
+
+[look]
+
+auto_open_buffer  = on
+progress_bar_size = 20
+pv_tags           = "notify_private"
+
+
+[color]
+
+status_aborted    = lightred
+status_active     = lightblue
+status_connecting = yellow
+status_done       = lightgreen
+status_failed     = lightred
+status_waiting    = lightcyan
+text              = default
+text_bg           = default
+text_selected     = white
+
+
+[network]
+
+blocksize   = 65536
+fast_send   = on
+speed_limit = 0
+timeout     = 300
+
+own_ip     = ""
+port_range = ""
+
+
+[file]
+
+auto_accept_chats = off
+auto_accept_files = off
+auto_accept_nicks = ""
+
+auto_check_crc32 = off
+
+auto_rename = on
+auto_resume = on
+
+convert_spaces = on
+use_nick_in_filename = on
+
+download_path = "<%= get_var! :downloads_dir %>"
+upload_path   = "<%= get_var! :downloads_dir %>"
+
+
+# vim: set filetype=conf :

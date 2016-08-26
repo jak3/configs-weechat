@@ -1,0 +1,48 @@
+# => inherits: generic <= #
+
+
+fullname: 'Alessandro Molari'
+
+downloads_dir: '~/downloads'
+
+irc:
+  nickname: 'alem0lars'
+  servers:
+    - name:     'freenode'
+      address:  'Gemini.panicbnc.net/1338'
+      password: 'echo alem0lars/freenode:$(lpass show --password "alem0lars @ gemini.panicbnc.net")'
+      ssl: true
+    - name:     'ircnet'
+      address:  'Gemini.panicbnc.net/1338'
+      password: 'echo alem0lars/ircnet:$(lpass show --password "alem0lars @ gemini.panicbnc.net")'
+      ssl: true
+    - name:     'undernet'
+      address:  'Gemini.panicbnc.net/1338'
+      password: 'echo alem0lars/undernet:$(lpass show --password "alem0lars @ gemini.panicbnc.net")'
+      ssl: true
+    - name:     'efnet'
+      address:  'Gemini.panicbnc.net/1338'
+      password: 'echo alem0lars/efnet:$(lpass show --password "alem0lars @ gemini.panicbnc.net")'
+      ssl: true
+    - name:     'espernet'
+      address:  'Gemini.panicbnc.net/1338'
+      password: 'echo alem0lars/espernet:$(lpass show --password "alem0lars @ gemini.panicbnc.net")'
+      ssl: true
+    - name:     'smashthestack'
+      address:  'Gemini.panicbnc.net/1338'
+      password: 'echo alem0lars/smashthestack:$(lpass show --password "alem0lars @ gemini.panicbnc.net")'
+      ssl: true
+    - name:     'cesena'
+      address:  'cesena.irc.slack.com/6697'
+      password: 'lpass show --password "alem0lars @ cesena.irc.slack.com"'
+      ssl: true
+    - name:     'nextreamlabs'
+      address:  'nextreamlabs.irc.slack.com/6697'
+      password: 'lpass show --password "alem0lars @ nextreamlabs.irc.slack.com"'
+      ssl: true
+    - name:     'twitch'
+      address:  'irc.twitch.tv/6667'
+      password: 'echo oauth:$(lpass show --password "alem0lars @ irc.twitch.tv")'
+
+
+# vim: set filetype=yaml :
