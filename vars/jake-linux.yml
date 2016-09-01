@@ -1,0 +1,78 @@
+# => inherits: generic <= #
+
+
+# For passwords see Section: Secured data
+# https://weechat.org/files/doc/stable/weechat_user.en.html
+# /set irc.server.freenode.sasl_password "${sec.data.freenode}"
+
+downloads_dir: '~/Downloads'
+
+irc:
+  servers:
+    - name: 'freenode'
+      address: 'irc.freenode.net'
+      port: 7000
+      use_ssl: true
+      ssl_verify: false
+      autoconnect: true
+      nickname: 'j4ke'
+      realname: 'Giacomo'
+      channels:
+        - name: '#anapnea'
+          autojoin: true
+        - name: '#vim'
+          autojoin: true
+        - name: '##slackware'
+          autojoin: true
+        - name: '#radare'
+          autojoin: true
+        - name: '#pwning'
+          autojoin: true
+        - name: '#cesena'
+          autojoin: true
+        - name: '#fizzy'
+          autojoin: true
+    - name: 'sts'
+      address: 'irc.smashthestack.org'
+      port: 6697
+      use_ssl: true
+      ssl_verify: false
+      autoconnect: true
+      nickname: 'jake'
+      realname: 'Giacomo'
+      channels:
+        - name: '#io'
+          autojoin: true
+        - name: '#pwnable.kr'
+          autojoin: true
+        - name: '#tux'
+          autojoin: true
+        - name: '#twits'
+          autojoin: true
+        - name: '#news'
+          autojoin: true
+    - name: 'otw'
+      address: 'irc.overthewire.org'
+      port: 6697
+      use_ssl: true
+      ssl_verify: false
+      autoconnect: false
+      nickname: 'jake'
+      realname: 'Giacomo'
+      channels:
+        - name: '#wargames'
+          autojoin: true
+    - name: 'gny'
+      address: 'irc.gonullyourself.org'
+      port: 6697
+      use_ssl: true
+      ssl_verify: false
+      autoconnect: false
+      nickname: 'jake'
+      realname: 'Giacomo'
+      channels:
+        - name: '#gny'
+          autojoin: true
+
+
+# vim: set filetype=yaml :
