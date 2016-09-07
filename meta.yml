@@ -1,6 +1,6 @@
 elems:
 
-  - src:  'weechat/(.+)'
+  - src:  '(.+)'
     dst:  '~/.weechat/<1>'
     only:
       features: ['weechat']
