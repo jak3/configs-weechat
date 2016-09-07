@@ -254,8 +254,8 @@ ssl_verify = on
 <%= server['name'] %>.local_hostname
 <%= server['name'] %>.command
 <%= server['name'] %>.command_delay
-<% get_var!(server['name']+'.channels').each do |channel| %>
-<%= server['name'] %>.autojoin = <%= channel['autojoin'] ? channel['name'] : "" %>
+<% if server['channels'] %>
+<%= server['name'] %>.autojoin = <%= server['channels'].map{ |c| c['name']}.reduce{ |memo, chan| memo + ',' + chan} %>
 <% end %>
 <%= server['name'] %>.autorejoin
 <%= server['name'] %>.autorejoin_delay
