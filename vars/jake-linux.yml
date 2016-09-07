@@ -6,6 +6,7 @@
 # /set irc.server.freenode.sasl_password "${sec.data.freenode}"
 
 downloads_dir: '~/Downloads'
+weechat_dir: '~/.weechat'
 
 irc:
   servers:
