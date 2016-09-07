@@ -63,17 +63,6 @@ irc:
       channels:
         - name: '#wargames'
           autojoin: true
-    - name: 'gny'
-      address: 'irc.gonullyourself.org'
-      port: 6697
-      use_ssl: true
-      ssl_verify: false
-      autoconnect: false
-      nickname: 'jake'
-      realname: 'Giacomo'
-      channels:
-        - name: '#gny'
-          autojoin: true
 
 
 # vim: set filetype=yaml :
