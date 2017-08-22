@@ -5,7 +5,7 @@
 # https://weechat.org/files/doc/stable/weechat_user.en.html
 # /set irc.server.freenode.sasl_password "${sec.data.freenode}"
 
-downloads_dir: '~/Downloads'
+downloads_dir: '~/downloads'
 weechat_dir: '~/.weechat'
 
 irc:
