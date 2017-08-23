@@ -1,7 +1,7 @@
 # => inherits: generic <= #
 
 
-# For passwords see Section: Secured data
+# For passwords see Section: Secured data (3.14)
 # https://weechat.org/files/doc/stable/weechat_user.en.html
 # /set irc.server.freenode.sasl_password "${sec.data.freenode}"
 
